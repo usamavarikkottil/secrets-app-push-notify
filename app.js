@@ -259,6 +259,6 @@ app.post("/login", function (req, res) {
   });
 })
 
-
-app.listen(3000, () => console.log('port 3000 started'));
+const port = 5000 || process.env.PORT;
+app.listen(port , () => console.log(`port ${port} started`));
 
