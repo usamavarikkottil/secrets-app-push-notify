@@ -190,7 +190,7 @@ app.post("/submit", function (req, res) {
               notification: {
                 title: 'New Secret published',
                 body: `${user.username} has been posted a new secret, check it out now!`,
-                deep_link: 'https://www.usamav.dev',
+                deep_link: 'https://secret-app-push-notification.herokuapp.com/secrets',
               }
             },
             apns: {
